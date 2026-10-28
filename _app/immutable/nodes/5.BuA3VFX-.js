@@ -1,0 +1,1 @@
+import"../chunks/Bzak7iHL.js";import{b as a,l as e}from"../chunks/MzmN9McQ.js";import{o as r}from"../chunks/Dx1v-fW6.js";import{p,o as s}from"../chunks/BaqJw1h6.js";function d(m,n){p(n,!1),r(()=>{const t=e("veil-color",o=>{document.documentElement.style.background=o.payload,document.body.style.background=o.payload});return()=>{t.then(o=>o())}}),a(),s()}export{d as component};
