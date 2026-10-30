@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head><base href="https://zhanghaoquan631.github.io/s/8a3e4a6e7280daa47d6de162419ffd00/">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="referrer" content="no-referrer" />
+    <title>电影放映室 · 每日发票</title>
+    <link rel="stylesheet" href="https://zhanghaoquan631.github.io/s/8a3e4a6e7280daa47d6de162419ffd00/movie-watch.css" />
+    <script src="https://zhanghaoquan631.github.io/s/8a3e4a6e7280daa47d6de162419ffd00/vendor/hls/hls-1.7.3.min.js" defer></script>
+    <script src="https://zhanghaoquan631.github.io/s/8a3e4a6e7280daa47d6de162419ffd00/movie-watch.js" defer></script>
+  </head>
+  <body>
+    <main class="screening-room">
+      <nav class="topbar" aria-label="页面导航">
+        <a class="back-link" href="https://zhanghaoquan631.github.io/receipt-share?share=8a3e4a6e7280daa47d6de162419ffd00"><span aria-hidden="true">←</span> 返回播放器</a>
+        <span class="room-name">每日电影 · 放映室</span>
+      </nav>
+
+      <header class="film-heading">
+        <p class="eyebrow">留一段时间，给一部好电影</p>
+        <h1 id="film-title">电影放映室</h1>
+        <p class="original-title" id="film-original-title">正在读取影片信息…</p>
+        <div class="film-tags" id="film-tags" hidden>
+          <span id="verified-quality"></span>
+          <span id="subtitle-badge"></span>
+          <span>线路已选好</span>
+        </div>
+      </header>
+
+      <section class="player-section" aria-label="电影播放器">
+        <div class="video-frame">
+          <video id="movie-video" controls muted playsinline preload="none" aria-label="电影画面" aria-describedby="quiet-note subtitle-note"></video>
+        </div>
+        <div class="player-toolbar">
+          <button class="play-button" id="play-button" type="button" disabled>正在准备…</button>
+          <div class="playback-details">
+            <p id="playback-status" role="status" aria-live="polite">正在读取影片信息</p>
+            <p class="resolution" id="actual-resolution">实际分辨率：播放后读取</p>
+          </div>
+          <span class="sound-state" id="sound-state">静音 · 音量 0</span>
+        </div>
+        <p class="quiet-note" id="quiet-note">点击后从静音开始。需要声音时，可自行调整播放器的音量。</p>
+        <div class="error-message" id="playback-error" role="alert" hidden></div>
+        <noscript><p class="error-message">请启用 JavaScript 后打开此观看页。</p></noscript>
+      </section>
+
+      <footer class="film-notes">
+        <div>
+          <h2>画面与字幕</h2>
+          <p id="subtitle-note">正在读取已核验的字幕信息。</p>
+          <p class="verification-note" id="verification-note"></p>
+        </div>
+        <div class="source-note" id="source-note" hidden>
+          <h2>影片来源</h2>
+          <a id="source-link" target="_blank" rel="noopener noreferrer"></a>
+          <p>使用已选好的播放线路，无需手动切换。</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
